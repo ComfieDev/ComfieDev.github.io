@@ -14,13 +14,28 @@ to this section's matching END comment to see page-specific styles.
   See if you can cross-reference the rules in this file with the elements in index.html
 */
 
+/******************************************************************************
+START Glitch hello-app default styles
+
+The styles in this section do some minimal CSS resets, set default fonts and 
+colors, and handle the layout for our footer and "Remix on Glitch" button. If
+you're new to CSS they may seem a little complicated, but you can scroll down
+to this section's matching END comment to see page-specific styles.
+******************************************************************************/
+
+
+/* 
+  The style rules specify elements by type and by attributes such as class and ID
+  Each section indicates an element or elements, then lists the style properties to apply
+  See if you can cross-reference the rules in this file with the elements in index.html
+*/
+
 /* Our default values set as CSS variables */
 :root {
-  --color-bg: #69F7BE;
+  --color-bg: #ffffff;
   --color-text-main: #000000;
-  --color-text-header: #2800FF;
   --color-primary: #FFFF00;
-  --wrapper-height: 87vh;
+  --wrapper-height: 90vh;
   --image-max-width: 300px;
   --image-margin: 3rem;
   --font-family: "HK Grotesk";
@@ -38,13 +53,13 @@ to this section's matching END comment to see page-specific styles.
 /* Import fonts */
 @font-face {
   font-family: HK Grotesk;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+  src: url("https://fonts.google.com/specimen/Kameron?stroke=Slab+Serif")
     format("opentype");
 }
 @font-face {
   font-family: HK Grotesk;
   font-weight: bold;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+  src: url("https://fonts.google.com/specimen/Kameron?stroke=Slab+Serif")
     format("opentype");
 }
 
@@ -132,12 +147,38 @@ body {
 
 /* Very light scaling for our illustration */
 .title {
-  color: var(--color-text-header);
+  color: #000000;
   font-family: HK Grotesk;
   font-style: normal;
   font-weight: bold;
   font-size: 100px;
   line-height: 105%;
+  margin: 0;
+}
+
+.credits {
+  color: #000000;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 33%;
+  margin: 0;
+  
+  padding-top: 20px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.tooltip {
+  
+  color: #000000;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 100%;
   margin: 0;
 }
 
@@ -166,9 +207,21 @@ input {
   transition: 500ms;
 }
 
+button.wishlist,
+input {
+  font-family: inherit;
+  font-size: 150%;
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 0.5rem 3rem;
+  transition: 500ms;
+}
+
 /* Subheading */
 h2 {
-  color: var(--color-text-header);
+  color: #2800FF;
 }
 
 /* Interactive image */
@@ -193,4 +246,27 @@ h2 {
 }
 .fileopener:hover {
   border-bottom:3px solid var(--color-secondary);
+}
+
+krah {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 15px;
+
+}
+
+secondpadding {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+
+}
+
+.button-container {
+  display: flex;
+  
+  
+  
 }
