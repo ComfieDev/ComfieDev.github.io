@@ -1,3 +1,3 @@
 window.onload = function () {
-  window.location.href = "https://pizzapranks.com/product/olisinpa-split-by-samuli-pietikainen/";
+  window.location.href = "https://comfiedev.itch.io/olisinpa-split";
 };
